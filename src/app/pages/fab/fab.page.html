@@ -1,0 +1,53 @@
+<app-header [title]="title"></app-header>
+
+<ion-content>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed"> 
+    <ion-fab-button>
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+    
+    <ion-fab-list side="top">
+      
+      <ion-fab-button color="facebook">
+        <ion-icon name="logo-facebook"></ion-icon>
+      </ion-fab-button>
+
+      <ion-fab-button color="youtube">
+        <ion-icon name="logo-youtube"></ion-icon>
+      </ion-fab-button>
+
+      <ion-fab-button color="primary">
+        <ion-icon name="logo-twitter"></ion-icon>
+      </ion-fab-button>
+
+    </ion-fab-list>
+
+    <ion-fab-list side="start">
+      
+      <ion-fab-button>
+        <ion-icon name="logo-xbox"></ion-icon>
+      </ion-fab-button>
+
+      <ion-fab-button>
+        <ion-icon name="logo-vimeo"></ion-icon>
+      </ion-fab-button>
+
+      <ion-fab-button>
+        <ion-icon name="logo-google"></ion-icon>
+      </ion-fab-button>
+      
+    </ion-fab-list>
+  </ion-fab>
+
+  <ion-list>
+    <ion-item *ngFor = "let i of data, let index = index">
+      Item {{index + 1}}
+    </ion-item>
+  </ion-list>
+
+</ion-content>
+
+<ion-footer>
+  <ion-title>Este es el footer</ion-title>
+</ion-footer>

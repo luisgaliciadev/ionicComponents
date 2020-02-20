@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+
+      <!-- <ion-button (click)="togggleMenu()">
+        <ion-icon slot="icon-only" name="menu"></ion-icon>
+      </ion-button> -->
+
+      <ion-menu-button color="primary" menu="firstMenu"></ion-menu-button>
+
+      <ion-title color="primary">Componentes</ion-title>
+
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+
+    <ion-item *ngFor="let componente of componentes | async" [routerLink]="componente.redirectTo" detail>
+      <ion-icon slot="start" color="primary" [name]="componente.icon"></ion-icon>
+      <ion-label>{{componente.name}}</ion-label>
+    </ion-item> 
+  
+
+  </ion-list>
+ 
+</ion-content>

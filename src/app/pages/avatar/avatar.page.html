@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+        <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+
+    <ion-title>{{title}}</ion-title>
+
+    <ion-buttons slot="end">
+      <ion-avatar>
+        <img src="/assets/stan-lee.jpg">
+      </ion-avatar>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-chip color="primary" *ngFor="let i of [1,1,1,1,1,1]">
+    <ion-avatar>
+      <img src="/assets/stan-lee.jpg">
+    </ion-avatar>
+    <ion-label>Luciano</ion-label>
+  </ion-chip>
+
+  <ion-list>
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="/assets/stan-lee.jpg">
+      </ion-avatar>
+
+      <ion-label>Luciano</ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="/assets/note5.JPG">
+      </ion-avatar>
+
+      <ion-label>Luis</ion-label>
+    </ion-item>
+  </ion-list>
+
+</ion-content>
